@@ -9,70 +9,97 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <!--Youtube Icon-->
-      <ul class="header__logo">
-        <li><i class="fab fa-youtube"></i></li>
-        <li>Youtube</li>
-      </ul>
-      <ul class="header__icons">
-        <li><i class="fas fa-search"></i></li>
-        <li><i class="fas fa-ellipsis-v"></i></li>
-      </ul>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span>YouTube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
     </header>
     <section class="media">
-      <div class="media__main">
-        <!-- Media Show -->
+      <div class="player">
+        <!-- Video Player -->
         <video controls>
           <source src="/video/video.mp4" type="video/webm" />
         </video>
       </div>
     </section>
-    <section class="meida__info">
-      <div class="media__info__title">
-        <ul class="meida__info__tags">
-          <!--tags-->
-          <li><a href="#">#DreamCoding</a></li>
-          <li><a href="#">#Youtube</a></li>
-          <li><a href="#">#CloneCoding</a></li>
+    <section class="info">
+      <!-- Metadata-->
+      <div class="metadata">
+        <ul class="hashtags">
+          <li>#DreamCoding</li>
+          <li>#DreamCorders</li>
+          <li>#Junsu</li>
         </ul>
-        <div class="meida__info__content">
-          <span
-            >Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
-            만들기 | 프론트엔드 개발자 입문편: HTML, CSS, JavaScript</span
+        <div class="titleAndButton">
+          <span class="title"
+            >Youtube 모바일 & 데스크탑 브라우저 클론코딩 연습!</span
           >
-          <a href="#"><i class="fas fa-sort-down"></i></a>
+          <button class="moreBtn"></button>
         </div>
-        <div class="media__info__upload">
-          <span>1M views 1 month ago</span>
-        </div>
-        <ul class="media__info__icons">
-          <li><i class="fas fa-thumbs-up"></i></li>
-          <li><i class="fas fa-thumbs-down"></i></li>
-          <li><i class="fas fa-share"></i></li>
-          <li><i class="fas fa-save"></i></li>
-          <li><i class="fas fa-flag"></i></li>
-        </ul>
-        <ul class="media__info__icons__count">
-          <li>5k</li>
-          <li>0</li>
-          <li>Share</li>
-          <li>Save</li>
-          <li>Report</li>
-        </ul>
-      </div>
-      <div class="channel__info">
-        <div class="channel__info__user">
-          <!-- channel Icon -->
-          <span>드림코딩 by 앨리</span>
-          <span>1M Subscribers</span>
-        </div>
-        <div class="channel__info__icons">
-          <!-- subscribe icon -->
+        <div class="views">
+          <span class="views">1M views 1 mont ago</span>
         </div>
       </div>
+      <!-- Actions-->
+      <div class="actions">
+        <button><i class="fas fa-thumbs-up"></i><span>1K</span></button>
+        <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+        <button><i class="fas fa-share"></i><span>Share</span></button>
+        <button><i class="fas fa-plus"></i><span>Save</span></button>
+        <button>
+          <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+        </button>
+      </div>
+      <!-- Channel Description -->
+      <div class="channel">
+        <img src="image/avatar.jiif" alt="" />
+        <div class="info">
+          <span class="name">드림코딩 by junsu</span>
+          <span class="subscribers">1M subscribers</span>
+        </div>
+      </div>
+      <button class="subscribe">subscribe</button>
     </section>
-    <section class="meida__list"></section>
+    <section class="UpNexst">
+      <span class="title">Up next</span>
+      <ul>
+        <li class="item">
+          <img src="image/1.jfif" alt="" />
+          <div class="info">
+            <span class="title">
+              ITZY JYP OFFICEAL Video With Yuna side in Special life have we go~
+            </span>
+            <span class="channel">서랍속일기 by Jun </span>
+            <span class="views">12M views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <img src="image/2.jfif" alt="" />
+          <div class="info">
+            <span class="title"> Vlog 제작 꿀팁 알아두면 좋은 6가지 ! </span>
+            <span class="channel">서랍속일기 by Jun </span>
+            <span class="views">22k views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+        <li class="item">
+          <img src="image/3.jfif" alt="" />
+          <div class="info">
+            <span class="title"> 블로그 vs 브이로그 당신의 선택은? </span>
+            <span class="channel">서랍속일기 by Jun </span>
+            <span class="views">1M views</span>
+          </div>
+          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        </li>
+      </ul>
+    </section>
 
     <script
       src="https://kit.fontawesome.com/565f2fa998.js"

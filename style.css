@@ -1,116 +1,53 @@
 :root {
-  --text-color: #f0f4f5;
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --padding: 12px;
+  --avatar-size: 36px;
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0px;
+  font-family: Roboto;
 }
-li {
+
+ul {
   list-style: none;
 }
-a {
-  text-decoration: none;
-}
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  color: var(--white-color);
   align-items: center;
-  background-color: black;
-  color: var(--text-color);
-  width: 100%;
 }
 
-.header__logo {
-  font-size: 36px;
-  display: flex;
-  padding-left: 0;
+header .logo {
+  font-size: var(--font-large);
 }
 
-.header__logo li {
-  padding-right: 16px;
-}
-.header__logo li:first-child {
-  color: red;
+header .logo i {
+  color: var(--red-color);
 }
 
-.header__icons {
-  display: flex;
-  justify-items: center;
-}
-
-.header__icons li {
-  padding-right: 16px;
-}
-
-.media__main video {
-  width: 100%;
-}
-
-.meida__info__tags {
-  display: flex;
-  justify-content: flex-start;
-  margin: 0px;
-  padding: 0px;
-  font-size: 16px;
-}
-.meida__info__tags li {
-  padding-right: 12px;
-}
-
-.meida__info__tags a:visited {
-  color: blue;
-}
-.meida__info__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.meida__info__content span:first-child {
-  font-size: 24px;
-}
-
-.meida__info__content a {
-  padding: 8px 12px;
-  font-size: 24px;
-}
-.media__info__content a:visited {
-  color: black;
-}
-
-.media__info__upload {
-  color: gray;
-  padding-bottom: 16px;
-}
-
-.media__info__icons {
-  display: flex;
-  justify-content: space-around;
-  font-size: 36px;
-  padding: 12px 8px;
-  margin: 0;
-  color: gray;
-}
-
-.media__info__icons__count {
-  margin: 0px;
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 10px;
-  border-bottom: 1px solid gray;
-}
-
-.media__info__icons__count li:nth-child(1) {
-  position: relative;
-  right: 24px;
-}
-
-.media__info__icons__count li:nth-child(3) {
-  position: relative;
-  left: 10px;
-}
-
-.media__info__icons__count li:nth-child(4) {
-  position: relative;
-  left: 5px;
+header .icons .fa-search {
+  margin-right: var(--padding);
 }
