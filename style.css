@@ -27,6 +27,14 @@ body {
   font-family: Roboto;
 }
 
+button,
+button:focus {
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  background: none;
+}
+
 ul {
   list-style: none;
 }
@@ -50,4 +58,69 @@ header .logo i {
 
 header .icons .fa-search {
   margin-right: var(--padding);
+}
+
+.player {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.player video {
+  height: 100%;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.info .metadata {
+  padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+
+.info .metadata .hashtags li {
+  margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-large);
+}
+
+.info .metadata .titleAndButton .moreBtn {
+  height: 100%;
+}
+
+.info .metadata .views {
+  color: var(--grey-dark-color);
+  font-size: var(--font-small);
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+
+.info .actions button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  align-items: center;
+  color: var(--grey-dark-color);
+}
+
+.info .actions button i {
+  margin-bottom: calc(var(--padding) / 2);
+  font-size: var(--font-small);
+}
+
+.info .actions button i.active {
+  color: var(--blue-color);
 }
